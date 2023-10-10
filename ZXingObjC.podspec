@@ -11,9 +11,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.osx.deployment_target = '10.15'
+  s.watchos.deployment_target = '10.0'
 
   s.ios.frameworks = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'ImageIO', 'QuartzCore'
   s.osx.frameworks = 'AVFoundation', 'CoreMedia', 'QuartzCore'
+  s.watchos.frameworks = 'AVFoundation', 'CoreMedia', 'CoreGraphics', 'CoreVideo', 'ImageIO'
 
   s.default_subspec = 'All'
 
